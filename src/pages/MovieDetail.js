@@ -88,8 +88,9 @@ const MovieDetail = () => {
                   97% 🍅
                 </span>
                 <span className="bg-green-500 text-black px-3 py-1 rounded text-sm sm:text-base">
-                  {movie.vote_average * 10}% {/* Content Score */}
-                </span>
+  {(movie.vote_average * 10).toFixed(2)}% {/* Content Score */}
+</span>
+
               </div>
               <p className="text-lg text-gray-300 mb-4">{formatDate(movie.release_date)}</p>
               <p className="text-lg text-gray-300 mb-4">{formatTime(movie.runtime)} </p>
